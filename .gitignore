@@ -1,0 +1,65 @@
+# 환경변수 / 시크릿 (절대 커밋 금지)
+.env
+.env.*
+*.pem
+*.key
+
+# ===== client/ (Unity) =====
+client/[Ll]ibrary/
+client/[Tt]emp/
+client/[Oo]bj/
+client/[Bb]uild/
+client/[Bb]uilds/
+client/[Ll]ogs/
+client/[Mm]emoryCaptures/
+client/[Rr]ecordings/
+client/[Uu]ser[Ss]ettings/
+client/.vs/
+client/*.csproj
+client/*.sln
+client/*.suo
+client/*.user
+client/*.DotSettings.user
+client/*.booproj
+client/*.svd
+client/*.pidb
+client/*.unitypackage
+client/*.apk
+client/*.aab
+client/*.unityproj
+client/sysinfo.txt
+client/[Aa]ssets/AssetStoreTools*
+client/[Aa]ssets/Plugins/Editor/JetBrains*
+
+# ===== server/ (ASP.NET Core / .NET) =====
+# .sln / .csproj 자체는 추적 대상 — 빌드 산출물만 제외
+server/**/[Bb]in/
+server/**/[Oo]bj/
+server/**/[Dd]ebug/
+server/**/[Rr]elease/
+server/**/x64/
+server/**/x86/
+server/**/[Ll]og/
+server/**/[Ll]ogs/
+server/.vs/
+server/.idea/
+server/*.user
+server/*.userosscache
+server/*.sln.docstates
+server/**/appsettings.Development.json
+server/**/appsettings.Local.json
+server/**/*.nupkg
+server/**/project.lock.json
+server/.nuget/
+server/**/publish/
+server/**/PublishProfiles/*.pubxml
+server/**/*.publishsettings
+
+# ===== Claude Code 로컬 설정/스킬 (프로젝트 소스 아님) =====
+.claude/
+.agents/
+skills-lock.json
+
+# ===== OS =====
+.DS_Store
+Thumbs.db
