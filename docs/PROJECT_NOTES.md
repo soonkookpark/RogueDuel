@@ -4,12 +4,21 @@
 상태를 빠르게 파악하기 위한 문서입니다. 비밀값(API 키 등)은 여기
 절대 적지 않습니다 — 필요한 키는 `.env`(git 제외)에 있습니다.
 
-## 문서 구조
+## 레포 최상위 구조
 
-- `RogueDuel_최종_통합기획서.md` — 최종 확정 기획서 (이게 기준 문서)
-- `RogueDuel_기획서.md`, `RogueDuel_게임디자인_기획서.md` — 통합 전
-  원본 문서 (근거 자료로만 참고, 개발 기준은 통합본을 따를 것)
-- `RogueDuel_체크리스트.md` — 로컬 마크다운 체크리스트 (Notion 원본)
+```
+/client   Unity 프로젝트 (6.3 LTS, URP, WebGL)
+/server   ASP.NET Core Clean Architecture 솔루션
+/docs     기획/설계 문서 (이 파일 포함)
+```
+
+## 문서 구조 (전부 docs/ 아래)
+
+- `docs/RogueDuel_최종_통합기획서.md` — 최종 확정 기획서 (이게 기준 문서)
+- `docs/RogueDuel_기획서.md`, `docs/RogueDuel_게임디자인_기획서.md` —
+  통합 전 원본 문서 (근거 자료로만 참고, 개발 기준은 통합본을 따를 것)
+- `docs/RogueDuel_체크리스트.md` — 로컬 마크다운 체크리스트 (Notion 원본)
+- `CREDITS.md`는 관례상 레포 루트에 그대로 둠
 
 ## Notion 연동 상태
 
@@ -22,7 +31,7 @@
   (https://app.notion.com/p/3ba4ae22883b81a6ba3ec2c513baf1c7)
   - 속성: Name(제목), Phase(select: v0.1~v1.0/버퍼/Stretch),
     Status(select: 시작 전/진행 중/완료), Date(기간), Order(정렬용)
-  - 총 86개 작업 항목이 `RogueDuel_체크리스트.md` 기준으로 이미
+  - 총 86개 작업 항목이 `docs/RogueDuel_체크리스트.md` 기준으로 이미
     입력되어 있음
   - 날짜는 2026-08-12(프로젝트 시작일) 기준으로 로드맵 14번 섹션의
     주차를 실제 캘린더 날짜로 환산해 채워짐
@@ -48,5 +57,5 @@
 
 ## 다음 단계
 
-RogueDuel_최종_통합기획서.md 14번 섹션 v0.1부터 순서대로 진행.
+`docs/RogueDuel_최종_통합기획서.md` 14번 섹션 v0.1부터 순서대로 진행.
 Notion Dev Tracker의 Status를 진행 상황에 맞춰 업데이트하면 됨.
